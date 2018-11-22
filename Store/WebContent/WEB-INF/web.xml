@@ -10,11 +10,21 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <filter>
-  	<filter-name>Encoding</filter-name>
-  	<filter-class>com.hang.store.web.filter.EncodingFilter</filter-class>
+    <filter-name>Encoding</filter-name>
+    <filter-class>com.hang.store.web.filter.EncodingFilter</filter-class>
   </filter>
   <filter-mapping>
-  	<filter-name>Encoding</filter-name>
-  	<url-pattern>/*</url-pattern>
+    <filter-name>Encoding</filter-name>
+    <url-pattern>/*</url-pattern>
   </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserServlet</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.hang.store.web.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
